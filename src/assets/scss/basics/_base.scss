@@ -4,6 +4,9 @@
 
 html {
     width: 100%;
+    background-color: $blue;
+    color: $white;
+    font-family: Satoshi;
 }
 
 body {
@@ -22,7 +25,6 @@ label {
 h1 {
     font-size: $h1;
     line-height: $h1;
-
 }
 
 h2 {
@@ -43,50 +45,50 @@ h4 {
 
 }
 
-@include for-wider-layout {
-    h1 {
-        font-size: $h1-tablet;
-        line-height: $h1-tablet;
-    }
+// @include for-wider-layout {
+//     h1 {
+//         font-size: $h1-tablet;
+//         line-height: $h1-tablet;
+//     }
 
-    h2 {
-        font-size: $h2-tablet;
-        line-height: $h2-tablet;
-    }
-}
+//     h2 {
+//         font-size: $h2-tablet;
+//         line-height: $h2-tablet;
+//     }
+// }
 
-@include for-mobile-layout {
-    h1 {
-        font-size: $h1-mobile;
-        line-height: $h1-mobile;
-    }
+// @include for-mobile-layout {
+//     h1 {
+//         font-size: $h1-mobile;
+//         line-height: $h1-mobile;
+//     }
 
-    h2 {
-        font-size: $h2-mobile;
-        line-height: $h2-mobile;
-    }
+//     h2 {
+//         font-size: $h2-mobile;
+//         line-height: $h2-mobile;
+//     }
 
-    h3 {
-        font-size: $h3-mobile;
-        line-height: $h3-mobile;
-    }
+//     h3 {
+//         font-size: $h3-mobile;
+//         line-height: $h3-mobile;
+//     }
 
-    h4 {
-        font-size: $h4-mobile;
-        line-height: $h4-mobile;
-    }
+//     h4 {
+//         font-size: $h4-mobile;
+//         line-height: $h4-mobile;
+//     }
 
-    p,
-    a,
-    label {
-        font-size: $p-mobile;
-    }
+//     p,
+//     a,
+//     label {
+//         font-size: $p-mobile;
+//     }
 
-    a {
-        font-size: $small-mobile !important;
-    }
+//     a {
+//         font-size: $small-mobile !important;
+//     }
 
-}
+// }
 
 p,
 h1,
@@ -95,6 +97,14 @@ h3,
 h4,
 h5 {
     margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Satoshi-bold;
 }
 
 
@@ -107,6 +117,29 @@ ol {
 
 ::-webkit-scrollbar {
     width: 10px;
+}
+
+button {
+    all: unset;
+    background-color: $brown;
+    color: $black;
+    width: fit-content;
+    padding: $btn-pad;
+    font-family: Satoshi-bold;
+    font-size: $btn;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        font-size: $btn;
+        background-color: $white;
+        color: $brown;
+    }
+
+    &:active {
+        box-shadow: inset 10px 10px 21px #cac6c6,
+        inset -10px -10px 21px #ffffff;
+    }
 }
 
 /* Track */
@@ -129,73 +162,4 @@ ol {
 ::selection {
     color: $black;
     background: $white;
-}
-
-input,
-textarea,
-button {
-    all: unset;
-    border: 5px $lavender solid;
-    // border-radius: $br;
-    padding: $btn-pad;
-    transition: 0.2s;
-}
-
-input,
-textarea {
-    background: linear-gradient(145deg, #7e7abe, #9690e2);
-
-    &:focus {
-        box-shadow: inset 20px 20px 60px #565381,
-            inset -20px -20px 60px #a19bf3;
-    }
-}
-
-button {
-    background: linear-gradient(145deg, #e6cc40, #fff34c);
-
-    &:active {
-        box-shadow: inset 30px 30px 80px #b09e34,
-            inset -5px -5px 20px #ffff52;
-    }
-}
-
-a {
-    text-decoration: none;
-    background-color: $mustard;
-    padding: $btn-pad;
-    width: fit-content;
-    color: $black;
-    font-family: Chillax-semibold;
-    font-size: $small;
-    // border-radius: 20px;
-    // box-shadow: 0px 0px 5px 0px $mustard;
-    transition: 0.2s;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-
-    &:hover {
-        &::after {
-            width: 100%;
-            content: 'visit ➡';
-            text-align: center;
-            color: $white;
-            font-size: $small;
-        }
-    }
-
-    &::after {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.2s;
-        content: '';
-        background-color: $lavender;
-        width: 0%;
-        height: 100%;
-        position: absolute;
-        top: 0%;
-        left: 0;
-    }
 }

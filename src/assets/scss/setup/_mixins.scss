@@ -20,7 +20,7 @@
 }
 
 @mixin for-wider-layout {
-    @media (max-width: $wide-dekstop-breakpoint) {
+    @media (min-width: $wide-dekstop-breakpoint) {
         @content;
     }
 }
