@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-import vid from '../../assets/videos/Let Sleeping Dogs Lie - Blissfully Unaware.mp4';
+// import vid from '../../assets/videos/Let Sleeping Dogs Lie - Blissfully Unaware.mp4';
 
 export const Hero = () => {
-    const arr = ['sound design', 'game audio', 'music composition']
+    const arr = ['sound design', 'game audio', 'music composition & production']
     const [word, setWord] = useState(arr[0])
-
     useEffect(() => {
         const interval = setInterval(() => {
             setWord(prevWord => {
@@ -15,7 +14,7 @@ export const Hero = () => {
         }, 2000)
 
         return () => clearInterval(interval);
-    }, [])
+    })
 
     return (<div className="hero-wrapper full">
         <div className="hero">

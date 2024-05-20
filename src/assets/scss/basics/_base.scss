@@ -119,6 +119,23 @@ ol {
     width: 10px;
 }
 
+a {
+    all: unset;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        font-weight: 700;
+        font-size: $p;
+    }
+
+    &.active {
+        color: $brown;
+        font-weight: 700;
+
+    }
+}
+
 button {
     all: unset;
     background-color: $brown;
@@ -138,28 +155,21 @@ button {
 
     &:active {
         box-shadow: inset 10px 10px 21px #cac6c6,
-        inset -10px -10px 21px #ffffff;
+            inset -10px -10px 21px #ffffff;
     }
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    // background: transparent;
-}
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
-    background-color: $mustard;
-}
+    background-color: $brown;
 
-::-webkit-scrollbar-thumb:hover {}
+}
 
 ::-moz-selection {
-    color: $black;
-    background: $white;
+    color: $white;
+    background: $black;
 }
 
 ::selection {
-    color: $black;
-    background: $white;
+    color: $white;
+    background: $black;
 }

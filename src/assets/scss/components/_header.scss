@@ -1,0 +1,24 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: $pad2;
+    z-index: 1;
+
+    nav {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: $gap2;
+
+            li {
+                font-size: $small;
+            }
+        }
+    }
+}
