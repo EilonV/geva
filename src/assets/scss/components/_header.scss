@@ -2,18 +2,32 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: $pad2;
     z-index: 1;
+
+    .header {
+        transition: 0.2s;
+
+        &.transparent {
+            background-color: transparent;
+        }
+
+        &.black {
+            background-color: $black;
+        }
+    }
 
     nav {
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding: $pad2;
 
         ul {
             width: fit-content;
             display: flex;
             align-items: center;
             justify-content: center;
+            align-self: center;
             gap: $gap2;
 
             li {

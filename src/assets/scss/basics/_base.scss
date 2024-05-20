@@ -136,7 +136,8 @@ a {
     }
 }
 
-button {
+button,
+a:not(header a) {
     all: unset;
     background-color: $brown;
     color: $black;

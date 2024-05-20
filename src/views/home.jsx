@@ -1,15 +1,13 @@
 import { HomeAbout } from "../components/home/about"
 import { HomeGameAudio } from "../components/home/game-audio"
 import { Hero } from "../components/home/hero"
-import { HomeMusicComposition } from "../components/home/music-composition"
-import { HomeSoundDesign } from "../components/home/sound-design"
+import { HomeCinema } from "../components/home/cinema"
 
 export const Home = () => {
     return <main className="home">
         <Hero />
-        <HomeSoundDesign />
+        <HomeCinema />
         <HomeGameAudio />
-        <HomeMusicComposition />
         <HomeAbout />
     </main>
 }

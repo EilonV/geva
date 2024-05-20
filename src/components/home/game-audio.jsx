@@ -6,7 +6,7 @@ export const HomeGameAudio = () => {
                     <h2>Game audio</h2>
                     <p>Composed and designed game audio that enhances the gaming experience through atmospheric and FX sounds. My work creates unique audio environments, adding depth and excitement to every interaction.</p>
                     <p>Check out my sound library below to listen to all my projects and sound FX.</p>
-                    <button>Sound library</button>
+                    <a href="/game-audio">Sound library</a>
                 </div>
                 <div className="video">
 

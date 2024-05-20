@@ -1,20 +1,39 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./views/home";
-import { SoundDesign } from "./views/sound-design";
+import { Cinema } from "./views/sound-design";
 import { GameAudio } from "./views/game-audio";
-import { MusicComposition } from "./views/music-composition";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";
+import { Contact } from "./views/contact";
+import { About } from "./views/about";
+import { PersonalProjects } from "./views/personal-projects";
+import { useEffect, useRef, useState } from "react";
+
 
 function App() {
+  const [headerClass, setHeaderClass] = useState('')
+  const headerRef = useRef('')
+
+  const listenScrollEvent = () => {
+    window.scrollY > 100
+      ? setHeaderClass("black")
+      : setHeaderClass("transparent")
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent)
+  })
+
   return (
-    <div className="app">
-      <Header />
+    <div className="app" >
+      <Header headerRef={headerRef} headerClass={headerClass} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/sound-design' element={<SoundDesign />} />
         <Route path='/game-audio' element={<GameAudio />} />
-        <Route path='/music-composition' element={<MusicComposition />} />
+        <Route path='/cinema-and-commercials' element={<Cinema />} />
+        <Route path='/personal-projects' element={<PersonalProjects />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about' element={<About />} />
       </Routes>
       <Footer />
     </div>
