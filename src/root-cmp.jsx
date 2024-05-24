@@ -11,7 +11,6 @@ import { useEffect, useRef, useState } from "react";
 import Plyr from "plyr";
 import "plyr-react/plyr.css"
 
-
 function App() {
   const [headerClass, setHeaderClass] = useState('')
   const headerRef = useRef('')
