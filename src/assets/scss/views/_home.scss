@@ -11,9 +11,8 @@
 
         .video {
             width: 100%;
-            min-width: 900px;
-            height: 500px;
-            background-color: $black;
+            align-self: center;
+            min-width: 50%;
         }
 
         .text {
@@ -22,15 +21,13 @@
             justify-content: space-between;
         }
 
-        button {
+        a {
             align-self: flex-end;
         }
     }
 
     .mid {
         background-color: $brown;
-
-
         color: $black;
 
         a {

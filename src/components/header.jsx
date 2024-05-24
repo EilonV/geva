@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom"
 
 export const Header = ({ headerRef, headerClass }) => {
-    console.log(headerClass);
     return <header>
         <div className={`header main-layout ${headerClass}`} ref={headerRef}>
             <nav>

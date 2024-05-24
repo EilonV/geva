@@ -8,6 +8,8 @@ import { Contact } from "./views/contact";
 import { About } from "./views/about";
 import { PersonalProjects } from "./views/personal-projects";
 import { useEffect, useRef, useState } from "react";
+import Plyr from "plyr";
+import "plyr-react/plyr.css"
 
 
 function App() {
@@ -23,7 +25,10 @@ function App() {
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent)
   })
-
+  const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
+  const audioPlayers = Array.from(document.querySelectorAll('.js-player-audio')).map((p) => new Plyr(p));
+  console.log(players);
+  console.log(audioPlayers);
   return (
     <div className="app" >
       <Header headerRef={headerRef} headerClass={headerClass} />

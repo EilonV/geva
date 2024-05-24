@@ -1,8 +1,15 @@
+import vid from '../../assets/videos/deer.mp4'
+import cover from '../../assets/images/cinema cover.png'
 export const HomeCinema = () => {
+    // const player = new Plyr('video', { captions: { active: true } });
+
     return <div className="home-sound-design-wrapper full">
         <div className="home-sound-design main-layout">
             <div className="home-section">
                 <div className="video">
+                    <video className='js-player' id="player" playsInline controls poster={cover} >
+                        <source src={vid} type="video/mp4" />
+                    </video>
                 </div>
                 <div className="text">
                     <h2>Cinema & commecrials</h2>

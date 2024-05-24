@@ -1,0 +1,22 @@
+:root {
+    --plyr-color-main: #b99c64;
+}
+
+.plyr:not(.plyr--audio) {
+    border-radius: $br;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    .plyr__controls {
+        transform: translateY(100%);
+    }
+
+    &:hover {
+        .plyr__controls {
+            transform: translateY(0);
+        }
+    }
+}
+
+.plyr--audio {
+    border-radius: $br;
+}
