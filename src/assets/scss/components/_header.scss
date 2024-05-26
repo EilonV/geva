@@ -6,13 +6,18 @@ header {
 
     .header {
         transition: 0.2s;
+        background-color: $dun;
+        color: $black;
 
-        &.transparent {
-            background-color: transparent;
-        }
+        &.transparent {}
 
         &.black {
+            color: $white;
             background-color: $black;
+
+            nav {
+                justify-content: space-between;
+            }
         }
     }
 
@@ -20,7 +25,10 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $pad2;
+        padding: $pad;
+        gap: $gap2;
+
+        img {}
 
         ul {
             width: fit-content;
@@ -32,6 +40,8 @@ header {
 
             li {
                 font-size: $small;
+
+                a {}
             }
         }
     }

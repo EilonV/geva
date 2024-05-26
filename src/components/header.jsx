@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom"
+import logo from '../assets/images/logos/geva logo.svg'
 
 export const Header = ({ headerRef, headerClass }) => {
     return <header>
         <div className={`header main-layout ${headerClass}`} ref={headerRef}>
             <nav>
+                <img src={logo} alt="geva hason logo" className="logo" />
                 <ul>
                     <li>
                         <NavLink to="/" className={({ isActive, isPending }) =>

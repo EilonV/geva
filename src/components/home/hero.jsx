@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import vid from '../../assets/videos/Let Sleeping Dogs Lie - Blissfully Unaware.mp4';
+import vid from '../../assets/videos/hero final final.webm';
 
 export const Hero = () => {
     const arr = ['sound design', 'game audio', 'music composition & production']
@@ -18,9 +18,9 @@ export const Hero = () => {
 
     return (<div className="hero-wrapper full">
         <div className="hero">
-            {/* <video autoPlay muted loop>
-                <source src={vid} type="video/mp4" />
-            </video> */}
+            <video autoPlay muted loop playsInline preload="auto">
+                <source src={vid} type="video/webm" />
+            </video>
             <div className="hero-content">
                 <h2>{word}</h2>
                 <h1>GEVA HASON</h1>
