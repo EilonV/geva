@@ -98,13 +98,13 @@ h4 {
     mask-size: 100%;
     -webkit-mask: url('../../images/logos/geva\ logo.svg') no-repeat center;
     mask: url('../../images/logos/geva\ logo.svg') no-repeat center;
+    filter: invert(85%) sepia(7%) saturate(75%) hue-rotate(319deg) brightness(106%) contrast(100%);
 }
 
-.black {
-    .logo {
-        filter: invert(85%) sepia(7%) saturate(75%) hue-rotate(319deg) brightness(106%) contrast(100%);
-    }
-}
+// .black {
+//     .logo {
+//     }
+// }
 
 p,
 h1,
@@ -146,16 +146,21 @@ a {
     }
 
     &.active {
-        color: $brown;
+        color: $white;
         font-weight: 700;
+        font-family: Satoshi-Italic;
     }
+}
+
+.page {
+    margin-top: 88px;
 }
 
 button,
 a:not(header a) {
     all: unset;
     background-color: $brown;
-    color: $black;
+    color: $white;
     width: fit-content;
     padding: $btn-pad;
     font-family: Satoshi-bold;
@@ -181,11 +186,11 @@ a:not(header a) {
 }
 
 ::-moz-selection {
-    color: $white;
-    background: $black;
+    color: $black;
+    background: $white;
 }
 
 ::selection {
-    color: $white;
-    background: $black;
+    color: $black;
+    background: $white;
 }

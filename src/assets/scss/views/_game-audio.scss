@@ -1,0 +1,55 @@
+.game-audio {
+    .main-games {
+        display: flex;
+
+        .main-game {
+            display: flex;
+            width: 100%;
+            padding: $pad2;
+            gap: $gap-large;
+
+            p {
+                font-size: $small;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: $gap2;
+                justify-content: space-between;
+
+                span {
+                    color: $brown;
+                }
+            }
+
+            .plyr {
+                width: 100%;
+                min-width: 600px;
+            }
+        }
+    }
+
+    .games-fx {
+        width: 100%;
+
+        .game-fx {
+            background-color: $white;
+            display: flex;
+
+            .text {
+                width: 100%;
+            }
+
+            .audio {
+                width: 30%;
+            }
+
+            &.solitaire {
+                background-image: url('../../images/games/solitaire.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
