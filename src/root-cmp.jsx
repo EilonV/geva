@@ -22,12 +22,36 @@ function App() {
   }
 
   useEffect(() => {
+    Array.from(document.querySelectorAll('.js-player')).map((p) => {
+      new Plyr(p);
+      return null;
+    });
+
+    Array.from(document.querySelectorAll('.js-player-audio')).map((p) => {
+      new Plyr(p, {
+        controls: [
+          'play',            // Play/pause button
+          'progress',        // Progress bar
+          'current-time',    // Current time display
+          'mute',            // Mute button
+          'volume'           // Volume control
+        ]
+      });
+      return null;
+    });
+
+    Array.from(document.querySelectorAll('.js-player-game-audio')).map((p) => {
+      new Plyr(p, {
+        controls: [
+          'play',            // Play/pause button
+          'progress',        // Progress bar
+          // 'current-time',    // Current time display
+        ]
+      });
+      return null;
+    });
     window.addEventListener("scroll", listenScrollEvent)
   })
-  const players = Array.from(document.querySelectorAll('.js-player')).map((p) => new Plyr(p));
-  const audioPlayers = Array.from(document.querySelectorAll('.js-player-audio')).map((p) => new Plyr(p));
-  console.log(players);
-  console.log(audioPlayers);
   return (
     <div className="app" >
       <Header headerRef={headerRef} headerClass={headerClass} />
