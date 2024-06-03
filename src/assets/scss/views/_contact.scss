@@ -1,0 +1,80 @@
+.contact-content {
+    display: flex;
+    gap: $gap-large;
+    margin: $margin 0;
+    min-height: 400px;
+
+    .social {
+        background-color: $brown2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $pad-large;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: $gap;
+        }
+
+        li {
+            display: flex;
+
+            a {
+                all: unset;
+                background-color: $black;
+                width: 100%;
+                padding: $pad-large;
+                cursor: pointer;
+                border-radius: $br;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                transition: 0.2s;
+
+                i {
+                    font-size: $h1;
+                    transition: 0.2s;
+
+                }
+
+                &:hover {
+                    background-color: $brown2;
+                    transform: translateY(-10px);
+                    i {
+                        color: $black;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: $gap-large;
+
+        .social-text {
+            display: flex;
+            gap: $gap2;
+            width: fit-content;
+            align-self: center;
+            justify-self: center;
+            align-items: center;
+
+
+            i {
+                font-size: 30px;
+                color: $brown2;
+            }
+        }
+
+        .geva {
+            font-weight: 700;
+        }
+    }
+}

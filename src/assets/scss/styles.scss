@@ -12,7 +12,7 @@
 @import 'components/_header.scss';
 @import 'components/_footer.scss';
 
-///////////// HOME
+        ///////////// HOME
 @import 'components/home/_hero.scss';
 @import 'components/home/_sound-design.scss';
 @import 'components/home/_game-audio.scss';
@@ -22,6 +22,7 @@
 @import 'views/_home.scss';
 @import 'views/_game-audio.scss';
 @import 'views/_about.scss';
+@import 'views/_contact.scss';
 
 // PACKAGES
 @import 'packages//_plyr.scss';

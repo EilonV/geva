@@ -22,7 +22,7 @@ export const About = () => {
                             A masters degree in Video Game Design
                         </li>
                         <li>
-                            Bachelor's Degree in Music Composition & Sound Editing for Media
+                            A Bachelor's Degree in Music Composition & Sound Editing for Media
                         </li>
                         <li>
                             Guitar & Bass Player for over 20 years.
