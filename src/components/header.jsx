@@ -28,14 +28,14 @@ export const Header = ({ headerRef, headerClass }) => {
                         }>personal</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }>contact</NavLink>
-                    </li>
-                    <li>
                         <NavLink to="/about" className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
                         }>about</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact" className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }>contact</NavLink>
                     </li>
                 </ul>
             </nav>

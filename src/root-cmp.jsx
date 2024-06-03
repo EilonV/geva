@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./views/home";
-import { Cinema } from "./views/sound-design";
+import { Cinema } from "./views/cinema";
 import { GameAudio } from "./views/game-audio";
 import { Header } from "./components/header";
 import { Footer } from "./components/footer";

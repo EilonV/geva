@@ -53,59 +53,65 @@ export const GameAudio = () => {
 
     return <section className="game-audio page">
         <div className="main-games">
-            <div className="main-game">
-                <div className="text">
-                    <div className='flex column gap'>
-                        <h2>Catch me if you can</h2>
-                        <p>CMIYC - Rougelike Puzzle Indice Video Game for PC.
-                            This game started as a project for AI Course During my Masters but since then it has evolved into much more.
-                            Release - T.B.C</p>
-                    </div>
-                    <span>
-                        Game Designer - Yaron Kantor
-                        <br />
-                        Unity Dev - Nisim Gerbi
-                        <br />
-                        Sound SFX - Geva Hason
-                    </span>
+            <div className="main-layout">
 
-                </div>
-                <video className='js-player' id="player" playsInline controls data-poster={cover}>
-                    <source src={vid} type="video/mp4" />
-                </video>
-                <div className="audio">
-                    {/* Iterate over each audio file and render an <audio> element */}
-                    {Object.entries(Idie).map(([fileName, src]) => (
-                        <div className='player-wrapper' key={fileName}>
-                            <p>{fileName}</p>
-                            <audio className='js-player-game-audio' preload="none" id="player" controls>
-                                <source src={src} type="audio/wav" />
-                            </audio>
+                <div className="main-game">
+                    <div className="text">
+                        <div className='flex column gap'>
+                            <h2>Catch me if you can</h2>
+                            <p>CMIYC - Rougelike Puzzle Indice Video Game for PC.
+                                This game started as a project for AI Course During my Masters but since then it has evolved into much more.
+                                Release - T.B.C</p>
                         </div>
-                    ))}
+                        <span>
+                            Game Designer - Yaron Kantor
+                            <br />
+                            Unity Dev - Nisim Gerbi
+                            <br />
+                            Sound SFX - Geva Hason
+                        </span>
 
-                </div>
-            </div>
-            <div className="main-game mik">
-                <video className='js-player' id="player" playsInline controls>
-                    <source src={mikmak} type="video/mp4" />
-                </video>
-                <div className="text">
-                    <div className='flex column gap'>
-                        <h2>MikMak World</h2>
-                        <p>MikMak is a social hub game for children developed by D.I.C.
-                            the video display a WIP of the City map of the 2nd iteration of the game.
-                            game is released and can be purchased on</p>
-                        <a href="https://www.mikmak.co.il/" target='noopener'>https://www.mikmak.co.il/</a>
                     </div>
-                    <span>
-                        Game Designer & Publisher - D.I.C Network (all rights reserved)
-                        <br />
-                        Sound SFX - Geva Hason
-                    </span>
-                </div>
+                    <video className='js-player' id="player" playsInline controls data-poster={cover}>
+                        <source src={vid} type="video/mp4" />
+                    </video>
+                    <div className="audio">
+                        {/* Iterate over each audio file and render an <audio> element */}
+                        {Object.entries(Idie).map(([fileName, src]) => (
+                            <div className='player-wrapper' key={fileName}>
+                                <p>{fileName}</p>
+                                <audio className='js-player-game-audio' preload="none" id="player" controls>
+                                    <source src={src} type="audio/wav" />
+                                </audio>
+                            </div>
+                        ))}
 
+                    </div>
+                </div>
             </div>
+            <div className='main-layout'>
+                <div className="main-game mik">
+                    <video className='js-player' id="player" playsInline controls>
+                        <source src={mikmak} type="video/mp4" />
+                    </video>
+                    <div className="text">
+                        <div className='flex column gap'>
+                            <h2>MikMak World</h2>
+                            <p>MikMak is a social hub game for children developed by D.I.C.
+                                the video display a WIP of the City map of the 2nd iteration of the game.
+                                game is released and can be purchased on</p>
+                            <a href="https://www.mikmak.co.il/" target='noopener'>https://www.mikmak.co.il/</a>
+                        </div>
+                        <span>
+                            Game Designer & Publisher - D.I.C Network (all rights reserved)
+                            <br />
+                            Sound SFX - Geva Hason
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <div className="games-fx">

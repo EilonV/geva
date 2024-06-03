@@ -1,0 +1,38 @@
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap-large;
+    margin: $margin 0;
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: $gap2;
+
+        p {
+            font-size: $small;
+        }
+
+        ul {
+            padding-left: 30px;
+
+            li {
+                list-style-type: disc;
+                font-size: $small2;
+                font-weight: 700;
+
+                &::marker {
+                 color: $brown2;
+                }
+            }
+        }
+    }
+}
