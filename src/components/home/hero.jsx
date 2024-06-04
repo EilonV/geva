@@ -22,8 +22,8 @@ export const Hero = () => {
                 <source src={vid} type="video/webm" />
             </video>
             <div className="hero-content">
-                <h2>{word}</h2>
                 <h1>GEVA HASON</h1>
+                <h2>{word}</h2>
             </div>
         </div>
     </div>
