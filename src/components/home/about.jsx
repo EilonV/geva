@@ -6,7 +6,7 @@ import audio3 from '../../assets/audio/showreels/Geva Y Hason - Rock and Blues S
 export const HomeAbout = () => {
 
     return <div className="home-about-wrapper full">
-        <div className="home-about main-layout">
+        <div className="home-about main-layout" data-aos="fade-up">
             <div className="home-section">
                 <img src={geva2} alt="geva hason portrait" draggable="false" />
                 <div className="text">
@@ -14,7 +14,7 @@ export const HomeAbout = () => {
                         <p className='summary'>Hello There!
                             I'm Geva Yosef Hason, a music composer and sound designer dedicated to finding the perfect note for every moment. Growing up in a family of musicians, I've always been surrounded by the beauty of sound.
                             <br /><br /> With a Master's in Video Game Design and a Bachelor's in Music Composition & Sound Editing for Media, I've had the privilege of working with a diverse range of creative professionals.</p>
-                        <div className="audio">
+                        <div className="audio" data-aos="fade-left" data-aos-delay="100">
                             <div className='song'>
                                 <div className="audio-info">
                                     <p>Geva Y Hason - Electronic & Dance Showreel</p>
@@ -42,7 +42,7 @@ export const HomeAbout = () => {
                         </div>
                     </div>
 
-                    <h3>"The right note at the right moment." -Johann Sebastian Bach</h3>
+                    <h3 data-aos="fade-left" data-aos-delay="150">"The right note at the right moment." -Johann Sebastian Bach</h3>
                 </div>
 
             </div>

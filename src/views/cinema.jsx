@@ -1,7 +1,6 @@
 export const Cinema = () => {
     return <section className="cinema page">
         <div className="main-layout">
-            <h1>cinema</h1>
             <div className="video flex">
                 <div className="flex column">
                     <h2>Video title</h2>

@@ -21,7 +21,7 @@ export const Hero = () => {
             <video autoPlay muted loop playsInline preload="auto">
                 <source src={vid} type="video/webm" />
             </video>
-            <div className="hero-content">
+            <div className="hero-content" data-aos="fade-left">
                 <h1>GEVA HASON</h1>
                 <h2>{word}</h2>
             </div>

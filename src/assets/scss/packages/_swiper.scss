@@ -1,0 +1,35 @@
+.swiper {
+    width: 100%;
+
+    // margin: $margin 0;
+    // max-width: 1000px;
+
+
+    .swiper-wrapper {}
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background: $white;
+            width: 20px;
+            border-radius: $br;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $brown2;
+        }
+    }
+
+    .swiper-slide-active {
+        // width: 80%;
+    }
+
+    .swiper-slide-next {}
+
+    .plyr {
+        // width: 100%;
+        // max-height: 700px;
+        // height: 90%;
+    }
+
+    video {}
+}

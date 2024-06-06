@@ -3,7 +3,6 @@ import mikmak from '../assets/videos/games/MikMak.mp4'
 import cover from '../assets/images/catch cover.png'
 import Plyr from 'plyr';
 import { useEffect } from 'react';
-
 const importAll = (r) => {
     let files = {};
     r.keys().map((item, index) => { files[item.replace('./', '')] = r(item); return null });
@@ -224,5 +223,6 @@ export const GameAudio = () => {
             </div>
 
         </div>
+
     </section>
 }

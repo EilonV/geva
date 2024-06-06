@@ -1,11 +1,10 @@
 .contact-content {
     display: flex;
-    gap: $gap;
     margin: $margin-xl 0;
     min-height: 55vh;
 
     .social {
-        background-color: $brown2;
+        // background-color: $brown2;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -25,7 +24,7 @@
 
             a {
                 all: unset;
-                background-color: $black;
+                background-color: $brown2;
                 width: 100%;
                 padding: $pad-large;
                 cursor: pointer;
@@ -42,6 +41,7 @@
                 &:hover {
                     background-color: $brown2;
                     transform: translateY(-10px);
+
                     i {
                         color: $black;
                     }
