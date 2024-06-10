@@ -8,6 +8,7 @@ import { Contact } from "./views/contact";
 import { About } from "./views/about";
 import { PersonalProjects } from "./views/personal-projects";
 import { useEffect, useRef, useState } from "react";
+
 import Plyr from "plyr";
 import AOS from 'aos';
 import ReactGA from "react-ga4";

@@ -30,6 +30,9 @@ header {
         padding: $pad;
         gap: $gap2;
 
+        @include for-mobile-layout{
+            
+        }
         img {}
 
         ul {

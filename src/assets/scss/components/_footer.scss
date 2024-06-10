@@ -10,10 +10,14 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
+        gap: $gap;
 
         ul {
             display: flex;
             gap: $gap2;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
 
             li {
                 a {
@@ -28,11 +32,24 @@ footer {
         }
 
         .rights {
-            font-size: $smaller;
+            font-size: $smallest;
+            text-align: center;
         }
 
         .logo {
             filter: invert(85%) sepia(7%) saturate(75%) hue-rotate(319deg) brightness(106%) contrast(100%);
+        }
+
+        .social {
+
+            i {
+                transition: 0.2s;
+                font-size: $small;
+
+                &:hover {
+                    font-weight: 700;
+                }
+            }
         }
     }
 
