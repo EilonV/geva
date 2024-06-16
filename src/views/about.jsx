@@ -1,4 +1,4 @@
-import geva from '../assets/images/geva2.jpg'
+import geva from '../assets/images/geva2.webp'
 
 export const About = () => {
     return <section className="about page">
@@ -25,7 +25,7 @@ export const About = () => {
                             A Bachelor's Degree in Music Composition & Sound Editing for Media
                         </li>
                         <li>
-                            Guitar & Bass Player for over 20 years.
+                            Guitar & Bass Player for over 20 years
                         </li>
                     </ul>
                     <p data-aos="fade-left" data-aos-delay="250">

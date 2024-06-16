@@ -57,6 +57,14 @@ function App() {
       return null;
     });
 
+    Array.from(document.querySelectorAll('.js-player-video')).map((p) => {
+      new Plyr(p, {
+        controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+        settings: ['captions', 'quality', 'speed', 'loop']
+      });
+      return null;
+    });
+
     Array.from(document.querySelectorAll('.js-player-audio')).map((p) => {
       new Plyr(p, {
         controls: [
@@ -76,12 +84,13 @@ function App() {
           'play',            // Play/pause button
           'progress',        // Progress bar
           // 'current-time',    // Current time display
-        ]
+        ],
       });
       return null;
     });
     window.addEventListener("scroll", listenScrollEvent)
   })
+  
   return (
     <div className="app" >
       <Header headerRef={headerRef} headerClass={headerClass} />

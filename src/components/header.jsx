@@ -1,12 +1,27 @@
 import { NavLink } from "react-router-dom"
 import logo from '../assets/images/logos/geva logo.svg'
+import 'hamburgers/_sass/hamburgers/hamburgers.scss';
+import { useRef } from "react";
 
 export const Header = ({ headerRef, headerClass }) => {
+    const hamburgerRef = useRef()
+    const navRef = useRef()
+
+    const toggleHambuger = () => {
+        hamburgerRef.current.classList.toggle('is-active')
+        navRef.current.classList.toggle('is-active')
+    }
+
+    const closeNav = () => {
+        hamburgerRef.current.classList.remove('is-active')
+        navRef.current.classList.remove('is-active')
+    }
+
     return <header>
         <div className={`header main-layout ${headerClass}`} ref={headerRef}>
             <nav>
                 <img src={logo} alt="geva hason logo" className="logo" />
-                <ul>
+                <ul ref={navRef} onClick={closeNav}>
                     <li>
                         <NavLink to="/" className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
@@ -38,6 +53,11 @@ export const Header = ({ headerRef, headerClass }) => {
                         }>contact</NavLink>
                     </li>
                 </ul>
+                <button className="hamburger hamburger--collapse" type="button" onClick={toggleHambuger} ref={hamburgerRef}>
+                    <span className="hamburger-box">
+                        <span className="hamburger-inner"></span>
+                    </span>
+                </button>
             </nav>
         </div>
     </header>
