@@ -37,8 +37,8 @@ export const Cinema = () => {
                             lazy="true"
                         >
                             <SwiperSlide >
-                                <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                <div class="plyr__video-embed" id="player" >
+                                    <iframe title='where is the one'
                                         src="https://youtube.com/embed/yr-h3vOjDNA"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -48,7 +48,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide >
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='all by myself'
                                         src="https://youtube.com/embed/y7CndV50CMc"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -59,7 +59,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide >
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='desert exile'
                                         src="https://youtube.com/embed/fbFwQLAXn48"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -69,7 +69,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide >
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='fear'
                                         src="https://youtube.com/embed/xdR3fiJ_nUQ"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -97,7 +97,7 @@ export const Cinema = () => {
                         >
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe title='none'
+                                    <iframe title='bury a lie'
                                         src="https://youtube.com/embed/O7dQW0AfuS8"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -108,7 +108,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='blissfully unaware'
                                         src="https://youtube.com/embed/u5-XiXE6Em8"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -118,7 +118,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='killing everything that is cute'
                                         src="https://youtube.com/embed/KkX-EguFevw"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -128,7 +128,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='wide awake'
                                         src="https://youtube.com/embed/EIOIWYLUuk4"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -138,7 +138,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='blissfully unaware 2'
                                         src="https://youtube.com/embed/EQ47_6ilegE"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -193,7 +193,7 @@ export const Cinema = () => {
                         >
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='careful optimism'
                                         src="https://youtube.com/embed/UCQvnSAI6To"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -203,7 +203,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='complition'
                                         src="https://youtube.com/embed/I7RTsJBXpQc"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -213,7 +213,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='keep on walking'
                                         src="https://youtube.com/embed/4wJAKWJpnuI"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -223,7 +223,7 @@ export const Cinema = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='shattered'
                                         src="https://youtube.com/embed/otkykmeZBrw"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -277,7 +277,7 @@ export const Cinema = () => {
                             </div>
                             <div className="videos">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='the uncanny variable'
                                         src="https://youtube.com/embed/gDFzIr79bYo"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -303,7 +303,7 @@ export const Cinema = () => {
                             </div>
                             <div className="videos">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='flex multiheater'
                                         src="https://youtube.com/embed/BQgCJlkh2bI"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -331,7 +331,7 @@ export const Cinema = () => {
                             </div>
                             <div className="videos">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='ohev'
                                         src="https://youtube.com/embed/Z2WxE0-gOfM"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -360,7 +360,7 @@ export const Cinema = () => {
                             </div>
                             <div className="videos">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='sham'
                                         src="https://youtube.com/embed/Voi5nXZVvJc"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -389,7 +389,7 @@ export const Cinema = () => {
                             </div>
                             <div className="videos">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='pigeon and crow'
                                         src="https://youtube.com/embed/loPyknnnTcU"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -427,7 +427,7 @@ export const Cinema = () => {
                             <div className="video">
 
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='deer'
                                         src="https://youtube.com/embed/OpIGvPFtCyM"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -439,7 +439,7 @@ export const Cinema = () => {
                         <SwiperSlide>
                             <div className="video">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='hungry kids'
                                         src="https://youtube.com/embed/Y2NXKF_rS6E"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -451,7 +451,7 @@ export const Cinema = () => {
                         <SwiperSlide>
                             <div className="video">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='tiltan'
                                         src="https://youtube.com/embed/g_99xzdtkAE"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -488,7 +488,7 @@ export const Cinema = () => {
                         <SwiperSlide>
                             <div className="original-score">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='trailer'
                                         src="https://youtube.com/embed/sKd-MwLkVjM"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -500,7 +500,7 @@ export const Cinema = () => {
                         <SwiperSlide>
                             <div className="original-score">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='whoreville'
                                         src="https://youtube.com/embed/o_968YeezKk"
                                         allowFullScreen
                                         allowtransparency="true"
@@ -512,7 +512,7 @@ export const Cinema = () => {
                         <SwiperSlide>
                             <div className="video">
                                 <div class="plyr__video-embed" id="player">
-                                    <iframe
+                                    <iframe title='sleepless night'
                                         src="https://player.vimeo.com/video/286387873?h=04c8cad98e"
                                         allowFullScreen
                                         allowtransparency="true"
