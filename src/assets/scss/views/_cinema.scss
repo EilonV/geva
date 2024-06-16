@@ -110,22 +110,10 @@
     margin: $margin 0;
     gap: $gap2;
 
-    .original-score,
-    .commercial {
-
-        // iframe {
-        //     box-sizing: border-box !important;
-        //     padding: $pad-xl $pad-xl 0 $pad-xl;
-        //     // width: 95%;
-        //     animation: load 1s 10 linear;
-
-        // }
-
-    }
 
     .swiper {
         width: 100%;
-        max-width: 100%;
+        max-width: 1000px;
 
         .swiper-button-prev,
         .swiper-button-next {
