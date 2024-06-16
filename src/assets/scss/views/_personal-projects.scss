@@ -1,0 +1,162 @@
+.personal-projects {
+
+    .videos {
+        width: 100%;
+        margin: $margin 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $gap-large;
+
+        .swiper {
+            max-width: 1000px;
+        }
+
+    }
+
+    iframe {
+        animation: load 1s 10 linear;
+        user-select: none;
+    }
+
+    .audio-wrapper {
+        display: flex;
+        width: 100%;
+        gap: $gap2;
+        background-color: $black-trans;
+        // flex-wrap: wrap;
+
+        .audio-section {
+            width: 100%;
+            padding: $pad2;
+            display: flex;
+            flex-direction: column;
+            gap: $gap;
+            align-items: center;
+            position: relative !important;
+            flex: 1 1 calc(33.333% - 20px); /* Adjust the margin value */
+
+
+            h3 {
+                color: $brown2;
+            }
+
+            // .audio {
+            //     max-height: 500px;
+            //     overflow-y: scroll;
+
+            //     .plyr {
+            //         border-radius: 0;
+            //         position: relative;
+            //     }
+
+            //     p {
+            //         font-size: $smaller;
+            //         // position: absolute;
+            //         background-color: $white;
+            //         color: $blue;
+            //         padding: 0 $pad-small;
+            //         top: 0;
+            //     }
+
+
+            // }
+
+            .audio {
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                max-height: 550px;
+                background-color: $white;
+                border-radius: $br;
+                align-items: center;
+
+                .logo-wrapper {
+                    width: 100%;
+                    // background-color: black;
+                    display: flex;
+                    // align-items: center;
+                    justify-content: center;
+
+                    &.logo2 {
+                        background-color: black;
+
+                        img {
+                            filter: invert(100%);
+                        }
+                    }
+
+                    &.logo3 {
+                        background-color: lightgrey;
+                    }
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        max-width: 300px;
+                        padding: $margin 0;
+                        align-self: center;
+                    }
+                }
+
+
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $brown2;
+                    border-radius: $br;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: $br;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 7px;
+                }
+
+                .plyr {
+                    border-radius: 0;
+                    width: 100%;
+                }
+
+                .player-wrapper {
+                    // align-items: center;
+                    width: 100%;
+                    position: relative;
+
+                    p {
+                        color: $black;
+                        font-size: $smaller;
+                        text-wrap: nowrap;
+                        background-color: transparent;
+                        padding: 0 $pad;
+                        position: absolute;
+                        top: 0;
+                        z-index: 1;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                    }
+
+                    input {
+                        margin-top: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: $brown2;
+        font-weight: 700;
+    }
+
+}
