@@ -51,10 +51,10 @@ export const GameAudio = () => {
     }, [])
 
     return <section className="game-audio page">
-        <div className="main-games">
+        <div className="main-games" >
             <div className="main-layout">
 
-                <div className="main-game">
+                <div className="main-game" data-aos="fade-right" data-aos-delay="100">
                     <div className="text">
                         <div className='flex column gap'>
                             <h2>Catch me if you can</h2>
@@ -89,7 +89,7 @@ export const GameAudio = () => {
                 </div>
             </div>
             <div className='main-layout'>
-                <div className="main-game mik">
+                <div className="main-game mik " data-aos="fade-left" data-aos-delay="200">
                     <video className='js-player' id="player" playsInline controls>
                         <source src={mikmak} type="video/mp4" />
                     </video>
@@ -114,7 +114,7 @@ export const GameAudio = () => {
         </div>
 
         <div className="games-fx">
-            <div className="game-fx solitaire">
+            <div className="game-fx solitaire" data-aos="fade-up" data-aos-delay="100">
                 <div className="text">
                     <h3>Solitaire Smash</h3>
                 </div>
@@ -131,7 +131,7 @@ export const GameAudio = () => {
                 </div>
             </div>
 
-            <div className="game-fx mikdash">
+            <div className="game-fx mikdash" data-aos="fade-up" data-aos-delay="150">
                 <div className="text">
                     <h3>MikDash</h3>
                 </div>
@@ -149,7 +149,7 @@ export const GameAudio = () => {
                 </div>
             </div>
 
-            <div className="game-fx mikspike">
+            <div className="game-fx mikspike" data-aos="fade-up" data-aos-delay="250">
                 <div className="text">
                     <h3>MikSpike</h3>
                 </div>
@@ -167,7 +167,7 @@ export const GameAudio = () => {
                 </div>
             </div>
 
-            <div className="game-fx mikcafe">
+            <div className="game-fx mikcafe" data-aos="fade-up" data-aos-delay="300">
                 <div className="text">
                     <h3>MikCafe</h3>
                 </div>
@@ -185,7 +185,7 @@ export const GameAudio = () => {
                 </div>
             </div>
 
-            <div className="game-fx mikball">
+            <div className="game-fx mikball" data-aos="fade-up" data-aos-delay="350">
                 <div className="text">
                     <h3>MikBall</h3>
                 </div>
@@ -203,7 +203,7 @@ export const GameAudio = () => {
                 </div>
             </div>
 
-            <div className="game-fx mikwitch">
+            <div className="game-fx mikwitch" data-aos="fade-up" data-aos-delay="400">
                 <div className="text">
                     <h3>MikWitch</h3>
                 </div>

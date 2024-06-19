@@ -9,7 +9,7 @@ export const Cinema = () => {
         <div className="main-layout">
             <div className="cinema">
 
-                <div className="project">
+                <div className="project" data-aos="fade-right" data-aos-delay="100">
                     <div className="text">
                         <div className='flex column gap'>
                             <h2>Zohar</h2>
@@ -37,7 +37,7 @@ export const Cinema = () => {
                             lazy="true"
                         >
                             <SwiperSlide >
-                                <div class="plyr__video-embed" id="player" >
+                                <div className="plyr__video-embed" id="player" >
                                     <iframe title='where is the one'
                                         src="https://youtube.com/embed/yr-h3vOjDNA"
                                         allowFullScreen
@@ -47,7 +47,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='all by myself'
                                         src="https://youtube.com/embed/y7CndV50CMc"
                                         allowFullScreen
@@ -58,7 +58,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='desert exile'
                                         src="https://youtube.com/embed/fbFwQLAXn48"
                                         allowFullScreen
@@ -68,7 +68,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide >
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='fear'
                                         src="https://youtube.com/embed/xdR3fiJ_nUQ"
                                         allowFullScreen
@@ -83,7 +83,7 @@ export const Cinema = () => {
                     </div>
                 </div>
 
-                <div className="project">
+                <div className="project" data-aos="fade-left" data-aos-delay="200">
                     <div className="videos">
                         <Swiper
                             slidesPerView={1}
@@ -96,7 +96,7 @@ export const Cinema = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='bury a lie'
                                         src="https://youtube.com/embed/O7dQW0AfuS8"
                                         allowFullScreen
@@ -107,7 +107,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='blissfully unaware'
                                         src="https://youtube.com/embed/u5-XiXE6Em8"
                                         allowFullScreen
@@ -117,7 +117,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='killing everything that is cute'
                                         src="https://youtube.com/embed/KkX-EguFevw"
                                         allowFullScreen
@@ -127,7 +127,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='wide awake'
                                         src="https://youtube.com/embed/EIOIWYLUuk4"
                                         allowFullScreen
@@ -137,7 +137,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='blissfully unaware 2'
                                         src="https://youtube.com/embed/EQ47_6ilegE"
                                         allowFullScreen
@@ -167,7 +167,7 @@ export const Cinema = () => {
 
                 </div>
 
-                <div className="project">
+                <div className="project" data-aos="fade-right" data-aos-delay="100">
                     <div className="text">
                         <div className='flex column gap'>
                             <h2>Bebo Asko</h2>
@@ -192,7 +192,7 @@ export const Cinema = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='careful optimism'
                                         src="https://youtube.com/embed/UCQvnSAI6To"
                                         allowFullScreen
@@ -202,7 +202,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='complition'
                                         src="https://youtube.com/embed/I7RTsJBXpQc"
                                         allowFullScreen
@@ -212,7 +212,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='keep on walking'
                                         src="https://youtube.com/embed/4wJAKWJpnuI"
                                         allowFullScreen
@@ -222,7 +222,7 @@ export const Cinema = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='shattered'
                                         src="https://youtube.com/embed/otkykmeZBrw"
                                         allowFullScreen
@@ -241,7 +241,7 @@ export const Cinema = () => {
             </div>
         </div>
 
-        <div className="carousel-wrapper full">
+        <div className="carousel-wrapper full" data-aos="fade-up" data-aos-delay="100">
             <div className="carousel main-layout">
                 <Swiper
                     slidesPerView={1}
@@ -259,7 +259,7 @@ export const Cinema = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className="project">
+                        <div className="project" data-aos="fade-up" data-aos-delay="100">
                             <div className="text">
                                 <div className='flex column gap'>
                                     <h2>The Uncanny Variable</h2>
@@ -276,7 +276,7 @@ export const Cinema = () => {
                                 </p>
                             </div>
                             <div className="videos">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='the uncanny variable'
                                         src="https://youtube.com/embed/gDFzIr79bYo"
                                         allowFullScreen
@@ -288,7 +288,7 @@ export const Cinema = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="project">
+                        <div className="project" data-aos="fade-up" data-aos-delay="100">
                             <div className="text">
                                 <div className='flex column gap'>
                                     <h2>Flex Multi Heater</h2>
@@ -302,7 +302,7 @@ export const Cinema = () => {
                                 </p>
                             </div>
                             <div className="videos">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='flex multiheater'
                                         src="https://youtube.com/embed/BQgCJlkh2bI"
                                         allowFullScreen
@@ -314,7 +314,7 @@ export const Cinema = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="project">
+                        <div className="project" data-aos="fade-up" data-aos-delay="100">
                             <div className="text">
                                 <div className='flex column gap'>
                                     <h2>Loving</h2>
@@ -330,7 +330,7 @@ export const Cinema = () => {
                                 </p>
                             </div>
                             <div className="videos">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='ohev'
                                         src="https://youtube.com/embed/Z2WxE0-gOfM"
                                         allowFullScreen
@@ -342,7 +342,7 @@ export const Cinema = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="project">
+                        <div className="project" data-aos="fade-up" data-aos-delay="100">
                             <div className="text">
                                 <div className='flex column gap'>
                                     <h2>Sham
@@ -359,7 +359,7 @@ export const Cinema = () => {
                                 </p>
                             </div>
                             <div className="videos">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='sham'
                                         src="https://youtube.com/embed/Voi5nXZVvJc"
                                         allowFullScreen
@@ -371,7 +371,7 @@ export const Cinema = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="project">
+                        <div className="project" data-aos="fade-up" data-aos-delay="100">
                             <div className="text">
                                 <div className='flex column gap'>
                                     <h2>Pigeon & Crow
@@ -388,7 +388,7 @@ export const Cinema = () => {
                                 </p>
                             </div>
                             <div className="videos">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='pigeon and crow'
                                         src="https://youtube.com/embed/loPyknnnTcU"
                                         allowFullScreen
@@ -404,7 +404,7 @@ export const Cinema = () => {
 
         </div>
 
-        <div className="commercials-wrapper full">
+        <div className="commercials-wrapper full" data-aos="fade-right" data-aos-delay="100">
             <div className="main-layout">
                 <div className="commercials">
                     <h2>Commercials</h2>
@@ -426,7 +426,7 @@ export const Cinema = () => {
                         <SwiperSlide>
                             <div className="video">
 
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='deer'
                                         src="https://youtube.com/embed/OpIGvPFtCyM"
                                         allowFullScreen
@@ -438,7 +438,7 @@ export const Cinema = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="video">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='hungry kids'
                                         src="https://youtube.com/embed/Y2NXKF_rS6E"
                                         allowFullScreen
@@ -450,7 +450,7 @@ export const Cinema = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="video">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='tiltan'
                                         src="https://youtube.com/embed/g_99xzdtkAE"
                                         allowFullScreen
@@ -466,7 +466,7 @@ export const Cinema = () => {
 
         </div>
 
-        <div className="original-scores-wrapper full">
+        <div className="original-scores-wrapper full" data-aos="fade-left" data-aos-delay="100">
             <div className="main-layout">
                 <div className="original-scores">
                     <h2>Original scores</h2>
@@ -487,7 +487,7 @@ export const Cinema = () => {
                     >
                         <SwiperSlide>
                             <div className="original-score">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='trailer'
                                         src="https://youtube.com/embed/sKd-MwLkVjM"
                                         allowFullScreen
@@ -499,7 +499,7 @@ export const Cinema = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="original-score">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='whoreville'
                                         src="https://youtube.com/embed/o_968YeezKk"
                                         allowFullScreen
@@ -511,7 +511,7 @@ export const Cinema = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="video">
-                                <div class="plyr__video-embed" id="player">
+                                <div className="plyr__video-embed" id="player">
                                     <iframe title='sleepless night'
                                         src="https://player.vimeo.com/video/286387873?h=04c8cad98e"
                                         allowFullScreen
