@@ -21,6 +21,7 @@ header {
     }
 
     nav {
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -39,6 +40,10 @@ header {
             align-self: center;
             gap: $gap2;
             transition: 0.5s;
+
+            nav>a {
+                display: flex;
+            }
 
             @include for-mobile-layout {
                 position: absolute;

@@ -6,6 +6,11 @@
     margin: $margin-xl 0;
     min-height: 55vh;
 
+    @include for-mobile-layout {
+        flex-direction: column;
+        margin-top: $margin;
+    }
+
     img {
         width: 100%;
         max-width: 500px;
@@ -31,7 +36,7 @@
                 font-weight: 700;
 
                 &::marker {
-                 color: $brown2;
+                    color: $brown2;
                 }
             }
         }

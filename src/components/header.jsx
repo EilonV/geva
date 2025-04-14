@@ -20,7 +20,9 @@ export const Header = ({ headerRef, headerClass }) => {
     return <header>
         <div className={`header main-layout ${headerClass}`} ref={headerRef}>
             <nav>
-                <img src={logo} alt="geva hason logo" className="logo" />
+                <a href="/">
+                    <img src={logo} alt="geva hason logo" className="logo" />
+                </a>
                 <ul ref={navRef} onClick={closeNav}>
                     <li>
                         <NavLink to="/" className={({ isActive, isPending }) =>

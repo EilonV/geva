@@ -23,6 +23,12 @@
             left: 0;
             bottom: 15%;
 
+            @include for-mobile-layout {
+                width: 100%;
+                bottom: 5%;
+                border-radius: 0;
+            }
+
             h2,
             h1 {
                 color: $white;
@@ -31,6 +37,12 @@
 
             h2 {
                 font-size: $h2 - 10;
+
+                @include for-mobile-layout {
+                    word-wrap: break-word;
+                    word-break: break-all;
+                }
             }
         }
+
     }

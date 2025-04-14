@@ -3,13 +3,22 @@
     margin: $margin-xl 0;
     min-height: 55vh;
 
+    @include for-mobile-layout {
+        flex-direction: column;
+        justify-content: center;
+        gap: $gap-large;
+    }
+
     .social {
-        // background-color: $brown2;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: $pad-large;
+
+        @include for-mobile-layout {
+            padding: $pad;
+        }
 
         ul {
             display: flex;
@@ -17,6 +26,11 @@
             width: 100%;
             flex-wrap: wrap;
             gap: $gap;
+
+            @include for-mobile-layout {
+                flex-wrap: nowrap;
+            }
+
         }
 
         li {
@@ -32,10 +46,18 @@
                 box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
                 transition: 0.2s;
 
+                @include for-mobile-layout {
+                    padding: 14px;
+                }
+
                 i {
                     font-size: $h1;
                     transition: 0.2s;
 
+                    @include for-mobile-layout {
+                        padding: $pad;
+                        font-size: $h2;
+                    }
                 }
 
                 &:hover {
@@ -70,6 +92,7 @@
             i {
                 font-size: 30px;
                 color: $brown2;
+                
             }
         }
 

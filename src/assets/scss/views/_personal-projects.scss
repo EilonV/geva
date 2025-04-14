@@ -13,6 +13,12 @@
             max-width: 1000px;
         }
 
+        @include for-mobile-layout {
+            .swiper-wrapper {
+                padding-bottom: $pad-large;
+            }
+        }
+
     }
 
     iframe {
@@ -25,7 +31,11 @@
         width: 100%;
         gap: $gap2;
         background-color: $black-trans;
-        // flex-wrap: wrap;
+
+        @include for-mobile-layout {
+            flex-direction: column;
+            gap: $gap;
+        }
 
         .audio-section {
             width: 100%;
@@ -35,33 +45,15 @@
             gap: $gap;
             align-items: center;
             position: relative !important;
-            flex: 1 1 calc(33.333% - 20px); /* Adjust the margin value */
+            flex: 1 1 calc(33.333% - 20px);
 
+            @include for-mobile-layout {
+                gap: $gap2;
+            }
 
             h3 {
                 color: $brown2;
             }
-
-            // .audio {
-            //     max-height: 500px;
-            //     overflow-y: scroll;
-
-            //     .plyr {
-            //         border-radius: 0;
-            //         position: relative;
-            //     }
-
-            //     p {
-            //         font-size: $smaller;
-            //         // position: absolute;
-            //         background-color: $white;
-            //         color: $blue;
-            //         padding: 0 $pad-small;
-            //         top: 0;
-            //     }
-
-
-            // }
 
             .audio {
                 position: relative;
@@ -78,9 +70,7 @@
 
                 .logo-wrapper {
                     width: 100%;
-                    // background-color: black;
                     display: flex;
-                    // align-items: center;
                     justify-content: center;
 
                     &.logo2 {
@@ -126,7 +116,6 @@
                 }
 
                 .player-wrapper {
-                    // align-items: center;
                     width: 100%;
                     position: relative;
 
@@ -146,6 +135,12 @@
 
                     input {
                         margin-top: 10px;
+                    }
+
+                    @include for-mobile-layout {
+                        p {
+                            font-size: 12px;
+                        }
                     }
                 }
 

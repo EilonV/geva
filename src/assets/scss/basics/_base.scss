@@ -8,11 +8,18 @@ html {
     color: $white;
     font-family: Satoshi;
     overflow-x: hidden;
+
+    @include for-mobile-layout {
+        overflow-x: hidden !important;
+    }
 }
 
 body {
     margin: 0;
-    ::selection {}
+
+    @include for-mobile-layout {
+        overflow-x: hidden;
+    }
 }
 
 p,
@@ -25,12 +32,20 @@ label {
 h1 {
     font-size: $h1;
     line-height: $h1;
+
+    @include for-mobile-layout {
+        font-size: $h1-mobile;
+        line-height: $h1-mobile;
+    }
 }
 
 h2 {
     font-size: $h2;
     line-height: $h2;
 
+    @include for-mobile-layout {
+        font-size: $h2-mobile !important;
+    }
 }
 
 h3 {
@@ -44,50 +59,6 @@ h4 {
     line-height: $h4;
 }
 
-// @include for-wider-layout {
-//     h1 {
-//         font-size: $h1-tablet;
-//         line-height: $h1-tablet;
-//     }
-
-//     h2 {
-//         font-size: $h2-tablet;
-//         line-height: $h2-tablet;
-//     }
-// }
-
-// @include for-mobile-layout {
-//     h1 {
-//         font-size: $h1-mobile;
-//         line-height: $h1-mobile;
-//     }
-
-//     h2 {
-//         font-size: $h2-mobile;
-//         line-height: $h2-mobile;
-//     }
-
-//     h3 {
-//         font-size: $h3-mobile;
-//         line-height: $h3-mobile;
-//     }
-
-//     h4 {
-//         font-size: $h4-mobile;
-//         line-height: $h4-mobile;
-//     }
-
-//     p,
-//     a,
-//     label {
-//         font-size: $p-mobile;
-//     }
-
-//     a {
-//         font-size: $small-mobile !important;
-//     }
-
-// }
 .logo {
     width: 100%;
     height: 100%;
@@ -99,11 +70,6 @@ h4 {
     mask: url('../../images/logos/geva\ logo.svg') no-repeat center;
     filter: invert(85%) sepia(7%) saturate(75%) hue-rotate(319deg) brightness(106%) contrast(100%);
 }
-
-// .black {
-//     .logo {
-//     }
-// }
 
 p,
 h1,

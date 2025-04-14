@@ -1,5 +1,6 @@
 .home-about {
     .home-section {
+
         .text {
             justify-content: space-evenly !important;
 
@@ -12,7 +13,12 @@
                 align-self: flex-end;
                 font-size: $small2;
             }
+        }
 
+        @include for-mobile-layout {
+            .text>div {
+                flex-direction: column;
+            }
         }
 
         img {
@@ -23,6 +29,12 @@
             aspect-ratio: 1/2;
             user-select: none;
             border-radius: $br;
+
+            @include for-mobile-layout {
+                max-height: 350px;
+                max-width: 400px;
+                align-self: center;
+            }
         }
 
         .audio {
@@ -36,6 +48,10 @@
             box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
             padding: $pad2;
             border-radius: $br;
+
+            @include for-mobile-layout {
+                min-width: 0;
+            }
 
             .song {
                 display: flex;

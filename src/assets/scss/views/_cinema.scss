@@ -4,6 +4,35 @@
         display: flex;
         flex-direction: column;
         gap: $gap-large;
+
+        @include for-mobile-layout {
+            margin: 0;
+            padding-top: 50px;
+
+            .project {
+                &:not(:first-of-type) {
+
+                    border-top: 4px solid $brown2;
+                }
+
+                .text {
+                    order: 1;
+                }
+
+                .videos {
+                    order: 2;
+                }
+            }
+
+            .project:last-of-type {
+                padding-bottom: 40px;
+            }
+
+            .swiper-pagination {
+                bottom: -5px;
+            }
+        }
+
     }
 
     .plyr {}
@@ -21,11 +50,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // min-height: 70vh;
-        // flex-direction: column;
-        // background-color: $black;
         padding: $pad;
         gap: $gap-large;
+
+        @include for-mobile-layout {
+            padding: 0;
+            flex-direction: column;
+        }
 
         .text {
             display: flex;
@@ -37,8 +68,6 @@
                 font-size: $small2;
                 color: $brown2;
             }
-
-            .desc {}
 
             .credits {
                 font-size: $small2;
@@ -55,6 +84,10 @@
 
     .swiper {
         max-width: 1000px;
+
+        @include for-mobile-layout {
+            max-width: calc(100vw - $pad-xl);
+        }
     }
 }
 
@@ -72,6 +105,19 @@
         .text {
             width: 30%;
         }
+
+        @include for-mobile-layout {
+            padding: $pad-large $pad-large 0 $pad-large;
+            gap: $gap;
+
+            .videos {
+                padding-bottom: 20px;
+            }
+
+            .text {
+                width: 100%;
+            }
+        }
     }
 
     .swiper {
@@ -81,7 +127,22 @@
         .swiper-button-next {
             color: $brown2;
             font-weight: 700;
+
+            @include for-mobile-layout {
+                width: 0px;
+
+                &::after {
+                    font-size: 24px;
+                }
+            }
         }
+
+        @include for-mobile-layout {
+            .swiper-pagination {
+                bottom: 0px;
+            }
+        }
+
     }
 
 
@@ -103,6 +164,7 @@
 
 .original-scores,
 .commercials {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,6 +172,37 @@
     margin: $margin 0;
     gap: $gap2;
 
+    @include for-mobile-layout {
+        max-width: calc(100vw - 40px);
+
+        .swiper-wrapper {
+            align-items: center;
+        }
+
+        .original-score,
+        .commercials {
+            padding-bottom: 20px;
+        }
+
+        .swiper-pagination {
+            bottom: -5px;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            &::after {
+                font-size: 30px;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 3px;
+        }
+
+        .swiper-button-next {
+            right: 3px;
+        }
+    }
 
     .swiper {
         width: 100%;
@@ -123,44 +216,6 @@
     }
 
 }
-
-// .commercials-wrapper {
-//     margin: $margin 0;
-//     width: 100%;
-// }
-
-// .original-scores-wrapper {
-//     background-color: $black-trans;
-//     padding: $margin 0;
-//     width: 100%;
-
-// }
-
-// .original-scores,
-// .commercials {
-//     gap: $gap-large;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     width: 100%;
-
-//     h2 {
-//         font-size: $h1;
-//         width: fit-content;
-//     }
-
-//     .idk {
-//         width: 100%;
-//     }
-
-//     .swiper {
-//         max-width: 100%;
-
-//         .swiper-slide {
-//         }
-//     }
-// }
 
 @keyframes load {
     0% {

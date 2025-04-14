@@ -1,5 +1,5 @@
 // import geva from '../../assets/images/geva profile 1.webp'
-import geva2 from '../../assets/images/IMG_4142.JPG'
+import geva2 from '../../assets/images/gevaportrait.jpg'
 import audio1 from '../../assets/audio/showreels/Geva Y Hason - Electronic & Dance Showreel.mp3'
 import audio2 from '../../assets/audio/showreels/Geva Y Hason - Orchestrated Music Showreel.mp3'
 import audio3 from '../../assets/audio/showreels/Geva Y Hason - Rock and Blues Showreel.mp3'

@@ -90,7 +90,7 @@ function App() {
     });
     window.addEventListener("scroll", listenScrollEvent)
   })
-  
+
   return (
     <div className="app" >
       <Header headerRef={headerRef} headerClass={headerClass} />

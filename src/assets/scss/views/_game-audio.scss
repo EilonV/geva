@@ -5,6 +5,7 @@
         padding: $pad-large 0;
         flex-direction: column;
 
+
         .main-game {
             display: flex;
             width: 100%;
@@ -26,8 +27,6 @@
                     color: $brown;
                     font-size: $small2;
                 }
-
-                a {}
             }
 
             .plyr--video {
@@ -37,6 +36,10 @@
 
             .plyr {
                 width: 100%;
+
+                .main-game {
+                    padding: $pad-small;
+                }
 
                 .plyr__poster {
                     background-size: cover;
@@ -60,14 +63,41 @@
                     border-radius: 0;
                     width: 100%;
                 }
+
+                @include for-mobile-layout {
+                    width: 100%;
+                }
             }
         }
+
+        @include for-mobile-layout {
+            .main-game {
+                padding: 20px 0;
+                flex-direction: column;
+                max-height: 100%;
+
+                .text {
+                    order: 1;
+                }
+
+                .plyr {
+                    order: 2;
+                }
+
+                .audio {
+                    order: 3;
+                }
+            }
+        }
+
     }
 
     .games-fx {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+
+
 
         .game-fx {
             background-color: $white;
@@ -80,12 +110,15 @@
             gap: $gap2;
             justify-content: center;
 
+            @include for-mobile-layout {
+                flex-direction: column;
+            }
+
             .text {
                 display: flex;
                 flex-direction: column;
                 gap: $gap;
                 width: 70%;
-                // height: 20%;
                 background-color: rgba(0, 0, 0, 0.4);
                 padding: $pad;
                 backdrop-filter: blur(2px);
@@ -93,18 +126,12 @@
                 justify-content: center;
                 box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
-                h3 {
-                    // height: 100%;
-                }
-
                 p {
                     font-size: $small2;
                     text-align: center;
                 }
 
             }
-
-
 
             &.solitaire {
                 background-image: url('../../images/games/solitaire.jpg');
@@ -181,7 +208,6 @@
         }
 
         .player-wrapper {
-            // align-items: center;
             width: 100%;
             position: relative;
 
